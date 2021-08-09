@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Tue Vi Infinity</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+  <!--stylesheet-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!--preloader start-->
+  <div class="preloader">
+    <svg class="preloader__svg" width="307" height="47" viewBox="0 0 307 47" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path class="preloader__svg-path" d="M0.311996 1.2H10.68V37.552H33.144V46H0.311996V1.2Z" stroke="white"
+        stroke-width="2" />
+      <path class="preloader__svg-path"
+        d="M59.883 46.768C55.2323 46.768 51.0297 45.7653 47.275 43.76C43.563 41.7547 40.6403 39.0027 38.507 35.504C36.4163 31.9627 35.371 27.9947 35.371 23.6C35.371 19.2053 36.4163 15.2587 38.507 11.76C40.6403 8.21866 43.563 5.44533 47.275 3.44C51.0297 1.43467 55.2323 0.431999 59.883 0.431999C64.5337 0.431999 68.715 1.43467 72.427 3.44C76.139 5.44533 79.0617 8.21866 81.195 11.76C83.3283 15.2587 84.395 19.2053 84.395 23.6C84.395 27.9947 83.3283 31.9627 81.195 35.504C79.0617 39.0027 76.139 41.7547 72.427 43.76C68.715 45.7653 64.5337 46.768 59.883 46.768ZM59.883 37.936C62.5283 37.936 64.9177 37.3387 67.051 36.144C69.1843 34.9067 70.8483 33.2 72.043 31.024C73.2803 28.848 73.899 26.3733 73.899 23.6C73.899 20.8267 73.2803 18.352 72.043 16.176C70.8483 14 69.1843 12.3147 67.051 11.12C64.9177 9.88267 62.5283 9.264 59.883 9.264C57.2377 9.264 54.8483 9.88267 52.715 11.12C50.5817 12.3147 48.8963 14 47.659 16.176C46.4643 18.352 45.867 20.8267 45.867 23.6C45.867 26.3733 46.4643 28.848 47.659 31.024C48.8963 33.2 50.5817 34.9067 52.715 36.144C54.8483 37.3387 57.2377 37.936 59.883 37.936Z"
+        stroke="white" stroke-width="2" />
+      <path class="preloader__svg-path"
+        d="M121.066 36.4H100.266L96.298 46H85.674L105.642 1.2H115.882L135.914 46H125.034L121.066 36.4ZM117.802 28.528L110.698 11.376L103.594 28.528H117.802Z"
+        stroke="white" stroke-width="2" />
+      <path class="preloader__svg-path"
+        d="M140.562 1.2H160.914C165.778 1.2 170.066 2.13866 173.778 4.016C177.533 5.85066 180.434 8.45333 182.482 11.824C184.573 15.1947 185.618 19.12 185.618 23.6C185.618 28.08 184.573 32.0053 182.482 35.376C180.434 38.7467 177.533 41.3707 173.778 43.248C170.066 45.0827 165.778 46 160.914 46H140.562V1.2ZM160.402 37.488C164.882 37.488 168.445 36.2507 171.09 33.776C173.778 31.2587 175.122 27.8667 175.122 23.6C175.122 19.3333 173.778 15.9627 171.09 13.488C168.445 10.9707 164.882 9.712 160.402 9.712H150.93V37.488H160.402Z"
+        stroke="white" stroke-width="2" />
+      <path class="preloader__svg-path" d="M193.437 1.2H203.805V46H193.437V1.2Z" stroke="white" stroke-width="2" />
+      <path class="preloader__svg-path"
+        d="M255.525 1.2V46H247.013L224.677 18.8V46H214.437V1.2H223.013L245.285 28.4V1.2H255.525Z" stroke="white"
+        stroke-width="2" />
+      <path class="preloader__svg-path"
+        d="M296.396 22.896H305.868V41.072C303.436 42.9067 300.62 44.3147 297.42 45.296C294.22 46.2773 290.999 46.768 287.756 46.768C283.106 46.768 278.924 45.7867 275.212 43.824C271.5 41.8187 268.578 39.0667 266.444 35.568C264.354 32.0267 263.308 28.0373 263.308 23.6C263.308 19.1627 264.354 15.1947 266.444 11.696C268.578 8.15467 271.522 5.40267 275.276 3.44C279.031 1.43467 283.255 0.431999 287.948 0.431999C291.874 0.431999 295.436 1.09333 298.636 2.416C301.836 3.73866 304.524 5.65866 306.7 8.176L300.044 14.32C296.844 10.9493 292.983 9.264 288.46 9.264C285.602 9.264 283.063 9.86133 280.844 11.056C278.626 12.2507 276.898 13.936 275.66 16.112C274.423 18.288 273.804 20.784 273.804 23.6C273.804 26.3733 274.423 28.848 275.66 31.024C276.898 33.2 278.604 34.9067 280.78 36.144C282.999 37.3387 285.516 37.936 288.332 37.936C291.319 37.936 294.007 37.296 296.396 36.016V22.896Z"
+        stroke="white" stroke-width="2" />
+    </svg>
+  </div>
+  <!--preloader end-->
+
+  <!--header section start-->
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="logo">
+          </a>
+        </div>
+        <div class="header__nav">
+          <ul class="header__nav-primary">
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Integrations</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+          <ul class="header__nav-secondary">
+            <li><a href="#" class="button">Đăng ký</a></li>
+          </ul>
+          <span><i class="fas fa-times"></i></span>
+        </div>
+        <div class="header__bars">
+          <div class="header__bars-bar header__bars-bar-1"></div>
+          <div class="header__bars-bar header__bars-bar-2"></div>
+          <div class="header__bars-bar header__bars-bar-3"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--header section end-->
+
+  <!--hero start-->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__img">
+        <div class="hero__img__wrapper height-fix">
+          <img class="cone" src="assets/images/cone.png" alt="image">
+          <img class="bottle" src="assets/images/screen-2.png" alt="image">
+          <img class="bottle-1" src="assets/images/screen.png" alt="image">
+          <img class="leaf" src="assets/images/leaf.png" alt="image">
+        </div>
+      </div>
+      <div class="hero__info text-center">
+        <h1 class="h1-heading dark-1">Introducing SleepTherapy</h1>
+        <p class="paragraph big light-1">A relaxing scent. A restful night.</p>
+        <a href="#" class="button">Purchase</a>
+      </div>
+    </div>
+  </section>
+  <!--hero end-->
+
+  <!--service section start-->
+  <section class="service">
+    <div class="swiper-container testimonial__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="service__single testimonial__slider-slide testimonial__slider-slide-1">
+            <div class="service__single-image"></div>
+            <div class="service__single-info">
+              <div class="service__single-info-wrapper service__single-info-wrapper-2">
+                <p>A simple interface that helps our employees submit accurate expenses in real time, and powerful
+                  rule-based automation that we can customize to our policy so expenses are auto-approved or sent to the
+                  best person to review and approve.</p>
+                <h5>Daniel Niccum,<span>CFO, Substation Services</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="service__single testimonial__slider-slide testimonial__slider-slide-2">
+            <div class="service__single-image"></div>
+            <div class="service__single-info">
+              <div class="service__single-info-wrapper service__single-info-wrapper-2">
+                <p>A simple interface that helps our employees submit accurate expenses in real time, and powerful
+                  rule-based automation that we can customize to our policy so expenses are auto-approved or sent to the
+                  best person to review and approve.</p>
+                <h5>Daniel Niccum,<span>CFO, Substation Services</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow-button">
+        <div class="arrow-button-prev"><i class="fas fa-angle-left"></i></div>
+        <div class="arrow-button-next"><i class="fas fa-angle-right"></i></div>
+      </div>
+    </div>
+  </section>
+  <!--service section end-->
+
+  <!--detail start-->
+  <section class="detail">
+    <div class="container">
+      <div class="detail__wrapper">
+        <div class="left__side">
+          <div class="detail__bg__wrapper">
+            <img src="assets/images/quantity_cone.png" alt="image" class="quality_cone">
+            <img src="assets/images/quantity_small_bottle.png" alt="image" class="quality_small_bottle">
+            <img src="assets/images/quantity_big_bottle.png" alt="image" class="quality_big_bottle">
+          </div>
+        </div>
+        <div class="right__side">
+          <div class="detail__info">
+            <h2 class="h2-heading">Sleep Therapy</h2>
+            <h3>$29.99</h3>
+            <p class="paragraph mid">Comfort is a natural elixir of Lavender, Frankincense, Chamomile and Clary Sage
+              essential oils.</p>
+            <div id="accordion">
+              <div class="card" id="card-1">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    <span>Ingrediants</span>
+                  </h5>
+                </div>
+                <div id="collapseOne" class="collapse card-body show customCollapse" aria-labelledby="headingOne"
+                  data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">
+                      Aqua, Alcohol Denat., PPG-26-Buteth-26, PEG-40 Hydrogenated Castor Oil, Lavandula Angustifolia Oil
+                      (Lavender), Boswellia Carterii Oil (Frankincense), Salvia Sclarea Oil (Clary Sage), Anthemis
+                      Nobilis
+                      Flower Oil (Chamomile), Phenoxyethanol, Disodium EDTA, Linalool, Coumarin, Geraniol, Limonene
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-2">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0 hidden" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    <span>User Instructions</span>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse card-body customCollapse" aria-labelledby="headingTwo"
+                  data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">
+                      Aqua, Alcohol Denat., PPG-26-Buteth-26, PEG-40 Hydrogenated Castor Oil, Lavandula Angustifolia Oil
+                      (Lavender), Boswellia Carterii Oil (Frankincense), Salvia Sclarea Oil (Clary Sage), Anthemis
+                      Nobilis
+                      Flower Oil (Chamomile), Phenoxyethanol, Disodium EDTA, Linalool, Coumarin, Geraniol, Limonene
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--detail end-->
+
+  <!--inside start-->
+  <section class="inside">
+    <div class="inside__wrapper">
+      <div class="inside__bg">
+        <img src="assets/images/plant-top.png" alt="image">
+      </div>
+      <div class="container">
+        <div class="inside__info text-center">
+          <h2 class="h2-heading">What's Inside</h2>
+          <p class="paragraph big white">We crafted our SleepTherapy from 100% pure
+            essential oils so it smells exceptional and helps you
+            drift off into a restful and deep sleep.</p>
+        </div>
+        <div class="inside__boxes">
+          <div class="inside__boxes--wrapper">
+            <a href="#">
+              <div class="inside__boxes-single inside__boxes-single--1">
+                <div class="first-side">
+                  <div class="first-side-img"><img src="assets/images/inside-icon-1.svg" alt="image"></div>
+                  <hr>
+                  <h3 class="h3-heading white">Lavender</h3>
+                </div>
+                <div class="second-side">
+                  <p class="paragraph white">We spent 10 months blending over a thousand scent formulations and made
+                    100+
+                    prototypes. We tested our prototypes on 12 different pillow cases to improve the lingering of
+                    SleepTherapy through the night.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="inside__boxes--wrapper">
+            <a href="#">
+              <div class="inside__boxes-single inside__boxes-single--2">
+                <div class="first-side">
+                  <div class="first-side-img"><img src="assets/images/inside-icon-2.svg" alt="image"></div>
+                  <hr>
+                  <h3 class="h3-heading white">Chamomile</h3>
+                </div>
+                <div class="second-side">
+                  <p class="paragraph white">We spent 10 months blending over a thousand scent formulations and made
+                    100+
+                    prototypes. We tested our prototypes on 12 different pillow cases to improve the lingering of
+                    SleepTherapy through the night.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="inside__boxes--wrapper">
+            <a href="#">
+              <div class="inside__boxes-single inside__boxes-single--3">
+                <div class="first-side">
+                  <div class="first-side-img"><img src="assets/images/inside-icon-3.svg" alt="image"></div>
+                  <hr>
+                  <h3 class="h3-heading white">Frankincense</h3>
+                </div>
+                <div class="second-side">
+                  <p class="paragraph white">We spent 10 months blending over a thousand scent formulations and made
+                    100+
+                    prototypes. We tested our prototypes on 12 different pillow cases to improve the lingering of
+                    SleepTherapy through the night.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="inside__boxes--wrapper">
+            <a href="#">
+              <div class="inside__boxes-single inside__boxes-single--4">
+                <div class="first-side">
+                  <div class="first-side-img"><img src="assets/images/inside-icon-4.svg" alt="image"></div>
+                  <hr>
+                  <h3 class="h3-heading white">Clary Sage</h3>
+                </div>
+                <div class="second-side">
+                  <p class="paragraph white">We spent 10 months blending over a thousand scent formulations and made
+                    100+
+                    prototypes. We tested our prototypes on 12 different pillow cases to improve the lingering of
+                    SleepTherapy through the night.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--inside end-->
+
+  <!--work section start-->
+  <section class="experiences">
+    <div class="container">
+      <div class="experiences__wrapper">
+        <div class="experiences__single experiences__img experiences__img--1">
+          <img src="assets/images/experience-img-1.jpg" alt="Image">
+        </div>
+        <div class="experiences__single experiences__info experiences__info--1">
+          <h6 class="h6-heading">Intro</h6>
+          <h5 class="h5-heading">We are the industry gurus when it comes to digital</h5>
+          <a href="#" class="text-link">meet us</a>
+        </div>
+        <div class="experiences__single experiences__img experiences__img--2">
+          <img src="assets/images/experience-img-2.jpg" alt="Image">
+        </div>
+        <div class="experiences__single experiences__info experiences__info--2">
+          <h6 class="h6-heading">Clients</h6>
+          <h5 class="h5-heading">93.1% boost in the sales in just 2 short months. Hatsoff to the guys couldn’t be
+            anymore </h5>
+          <a href="#" class="text-link">read more</a>
+        </div>
+        <div class="experiences__single experiences__img experiences__img--3">
+          <img src="assets/images/experience-img-3.jpg" alt="Image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--work section end-->
+
+  <!--promise start-->
+  <section class="promise">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="promise__info">
+            <h2 class="h2-heading">Quality Promise</h2>
+            <ul>
+              <li>Paraben Free</li>
+              <li>No Synthetic Fragrances</li>
+              <li>Sulphate Free</li>
+              <li>No Synthetic Colors</li>
+              <li>Phthalates Free</li>
+              <li>No Animal Testing</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="promise__img">
+            <div class="promise__img--img"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--promise end-->
+
+  <!--testimonial section start-->
+  <section class="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="swiper-container testimonial__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide testimonial__swiper-slide">
+              <h3>William John</h3>
+              <p>“Landder+ is changing the way furniture is produced and moved, cutting out time-consuming and expensive
+                shipping, showrooms and storage.”</p>
+            </div>
+            <div class="swiper-slide testimonial__swiper-slide">
+              <h3>William John</h3>
+              <p>“Landder+ is changing the way furniture is produced and moved, cutting out time-consuming and expensive
+                shipping, showrooms and storage.”</p>
+            </div>
+            <div class="swiper-slide testimonial__swiper-slide">
+              <h3>William John</h3>
+              <p>“Landder+ is changing the way furniture is produced and moved, cutting out time-consuming and expensive
+                shipping, showrooms and storage.”</p>
+            </div>
+            <div class="swiper-slide testimonial__swiper-slide">
+              <h3>William John</h3>
+              <p>“Landder+ is changing the way furniture is produced and moved, cutting out time-consuming and expensive
+                shipping, showrooms and storage.”</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-custom-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <!--testimonial section end-->
+
+  <!--video section start-->
+  <section class="video">
+    <div class="container">
+      <div class="row">
+        <div class="video__wrapper">
+          <div class="video__video">
+            <div class="video__video-thumbnail">
+              <img src="assets/images/video-thumbnail.jpg" alt="video-thumbnail">
+            </div>
+            <div class="video__video-video">
+              <iframe src="https://www.youtube.com/embed/bwrCCc6hWKo"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h2>Furniture for inspiring workplaces</h2>
+        <div class="swiper-container video__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide video__swiper-slide"><img src="assets/images/feedback-logo-big.png"
+                alt="feedback logo"></div>
+            <div class="swiper-slide video__swiper-slide"><img src="assets/images/feedback-logo-big.png"
+                alt="feedback logo"></div>
+            <div class="swiper-slide video__swiper-slide"><img src="assets/images/feedback-logo-big.png"
+                alt="feedback logo"></div>
+            <div class="swiper-slide video__swiper-slide"><img src="assets/images/feedback-logo-big.png"
+                alt="feedback logo"></div>
+            <div class="swiper-slide video__swiper-slide"><img src="assets/images/feedback-logo-big.png"
+                alt="feedback logo"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--video section end-->
+
+  <!--cta start-->
+  <section class="cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="cta__img height-fix">
+            <img class="cone" src="assets/images/cone1.png" alt="image">
+            <img class="phone" src="assets/images/phone.png" alt="image">
+            <img class="bottle" src="assets/images/bottle.png" alt="image">
+            <img class="leaf" src="assets/images/leaf1.png" alt="image">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="cta__info">
+            <h2 class="h2-heading">Pair SleepTherapy with
+              your sleep routine.</h2>
+            <p class="paragraph big">Listen to the full story <a href="#">here</a>.</p>
+            <div class="cta__info--buttons">
+              <a href="#" class="cta__info--buttons-single">
+                <i class="fab fa-apple"></i>
+                <div>
+                  <h6>Download on the</h6>
+                  <h5>App Store</h5>
+                </div>
+              </a>
+              <a href="#" class="cta__info--buttons-single">
+                <i class="fas fa-play"></i>
+                <div>
+                  <h6>Download on the</h6>
+                  <h5>GooglePlay</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--cta end-->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function () {
+      $("body").addClass("loaded");
+    });
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>

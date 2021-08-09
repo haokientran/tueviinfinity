@@ -1,0 +1,83 @@
+@mixin animateIt($duration: .25s){
+  -webkit-transition: all $duration ease;
+  -moz-transition: all $duration ease;
+  -o-transition: all $duration ease;
+  transition: all $duration ease;
+}
+
+@mixin line-anim-mixin($path-number, $offset){
+  @keyframes line-anim-#{$path-number} {
+    0% { stroke-dashoffset: $offset; }
+    50% { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: $offset; }
+  }
+}
+
+@mixin absoluteCenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+@mixin absoluteHorizontal{
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+}
+
+@mixin absoluteVertical{
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+}
+
+@mixin simpleButton($x-padding, $y-padding){
+  padding: $x-padding $y-padding;
+  font-size: 2.4rem;
+  font-weight: 400 !important;
+  color: $bg-color-white;
+  background-color: $button-color;
+  border: 2px solid $button-color;
+  @include animateIt;
+  &:hover{
+    color: $button-color;
+    background-color: $color-primary-light;
+  }
+}
+
+@mixin button($x-padding, $y-padding){
+  padding: $x-padding $y-padding;
+  background-color: $button-color;
+  font-weight: 700 !important;
+  font-size: 2rem;
+  color: $text-color-light;
+  @include animateIt();
+  &:hover{
+    color: $button-color;
+    background-color: $bg-color-white;
+  }
+}
+
+@mixin downloadButton() {
+  display: flex;
+  justify-content: center;
+  width: 22.4rem;
+  height: 7.9rem;
+  background-color: $button-color;
+  padding: 1.5rem 2rem;
+  div{ margin-left: 1rem; }
+  h6{ font-weight: 400 !important; font-size: 1.6rem;  color: $bg-color; }
+  h5{ font-weight: 300 !important; font-size: 3rem; color: $bg-color-white; margin-top: -.5rem; }
+  i{ font-size: 4rem; color: $icon-color; margin-top: .5rem; 
+    &.fas{ font-weight: 900 !important; }
+  }
+  @include animateIt;
+  &:hover{
+    h6, h5{color: #a04c10;}
+    background-color: white;
+  } 
+}
