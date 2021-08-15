@@ -2,11 +2,14 @@
 $(".header .header__bars").on('click', function () {
 
   var selector = $(".header .header__nav")
+  var heroimg = $(".hero .hero__img")
 
   if (selector.hasClass('shown')) {
+    heroimg.show();
     selector.css('right', "100%");
     selector.removeClass('shown');
   } else {
+    heroimg.hide();
     selector.css('right', "0");
     selector.addClass('shown');
   }
@@ -15,11 +18,14 @@ $(".header .header__bars").on('click', function () {
 $(".header .header__nav span").on('click', function () {
 
   var selector = $(".header .header__nav")
+  var heroimg = $(".hero .hero__img")
 
   if (selector.hasClass('shown')) {
+    heroimg.show();
     selector.css('right', "100%");
     selector.removeClass('shown');
   } else {
+    heroimg.hide();
     selector.css('right', "0");
     selector.addClass('shown');
   }
