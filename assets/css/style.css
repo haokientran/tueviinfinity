@@ -37,7 +37,7 @@ a {
   }
 }
 .h3-heading {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 300 !important;
 }
 .h4-heading {
@@ -63,8 +63,8 @@ a {
   font-weight: 300 !important;
 }
 .paragraph.big {
-  font-size: 3rem;
-  line-height: 4rem;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
 }
 .text-center {
   text-align: center;
@@ -315,7 +315,7 @@ body.loaded .preloader {
 .header {
   position: absolute;
   top: 0;
-  z-index: 100;
+  z-index: 150;
   background-color: transparent;
   padding: 3.6rem 0 5rem 0;
   width: 100%;
@@ -335,7 +335,7 @@ body.loaded .preloader {
 }
 .header__nav ul {
   display: inline-block;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 .header__nav li {
   list-style: none;
@@ -503,7 +503,7 @@ body.loaded .preloader {
   width: 100%;
   height: 100%;
   position: relative;
-  top: 8.6rem;
+  /*top: 8.6rem;*/
 }
 .hero__img__wrapper {
   width: -webkit-max-content;
@@ -533,8 +533,8 @@ body.loaded .preloader {
   bottom: -6rem;
 }
 .hero__info {
-  margin-top: 20rem;
-  padding-bottom: 5rem;
+  margin-top: 7rem;
+  padding-bottom: 3rem;
 }
 .hero__info .button {
   padding: 1.5rem 4.9rem;
@@ -619,14 +619,14 @@ body.loaded .preloader {
 }
 .service__single-image-1 {
   width: 50%;
-  height: 74.2rem;
+  height: 50rem;
   background: url("../images/service-img-1.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
 .service__single-image-2 {
   width: 50%;
-  height: 74.2rem;
+  height: 50rem;
   background: url("../images/service-img-2.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
@@ -766,20 +766,20 @@ body.loaded .preloader {
 }
 .service .testimonial__slider-slide-1 .service__single-image {
   width: 50%;
-  height: 74.2rem;
+  height: 50rem;
   background: url("../images/testimonial-img1.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
 .service .testimonial__slider-slide-2 .service__single-image {
   width: 50%;
-  height: 74.2rem;
+  height: 50rem;
   background: url("../images/testimonial-img2.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }.service .testimonial__slider-slide-3 .service__single-image {
   width: 50%;
-  height: 74.2rem;
+  height: 50rem;
   background: url("../images/testimonial-img3.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
@@ -804,7 +804,7 @@ body.loaded .preloader {
   }
 }
 .detail {
-  padding: 15rem 0;
+  padding: 5rem 0;
 }
 .detail__wrapper {
   display: -webkit-box;
@@ -942,7 +942,7 @@ body.loaded .preloader {
 }
 .inside {
   width: 100%;
-  padding: 15rem 0 22.9rem 0;
+  padding: 10rem 0 10rem 0;
   position: relative;
 }
 .inside::before {
@@ -980,7 +980,7 @@ body.loaded .preloader {
 }
 .inside__info .paragraph {
   width: 58%;
-  margin: 5.6rem auto 9.4rem auto;
+  margin: 3rem auto 6rem auto;
   z-index: 100;
 }
 .inside__boxes {
@@ -1121,15 +1121,16 @@ body.loaded .preloader {
 }
 .experiences {
   position: relative;
-  margin-top: 20rem;
+  margin-top: 5rem;
 }
 .experiences__wrapper {
   position: relative;
   width: 100%;
-  height: 150rem;
+  height: 140rem;
 }
 .experiences__info {
-  color: #fff;
+  /*color: #fff;*/
+  color: #7f796c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1147,9 +1148,9 @@ body.loaded .preloader {
   align-self: flex-start;
 }
 .experiences__info .h5-heading {
-  font-size: 4rem;
-  font-weight: 700 !important;
-  line-height: 6rem;
+  font-size: 2.4rem;
+  font-weight: 400 !important;
+  line-height: 3.4rem;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
@@ -1157,7 +1158,8 @@ body.loaded .preloader {
   width: 100%;
 }
 .experiences__info .text-link {
-  color: #fff;
+  /*color: #fff;*/
+  color: #7f796c;
   position: relative;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -1181,31 +1183,37 @@ body.loaded .preloader {
 }
 .experiences__info--1 {
   width: 58.5rem;
-  top: 13.4rem;
+  top: 16rem;
   right: 7rem;
-  z-index: 200;
+  /*z-index: 200;*/
+  /*
   background: url("../images/experience-bg-1.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
+  */
+  background-color: #fff9ec;
 }
 .experiences__info--2 {
   width: 50rem;
   top: 84.1rem;
+  /*
   background: url("../images/experience-bg-2.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
+  */
+  background-color: #fff9ec;
   z-index: 10;
 }
 .experiences__info--2 .h5-heading {
-  font-size: 3rem;
-  line-height: 4.4rem;
-  width: 80%;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
   margin: 3.7rem 0 5.9rem 0rem;
 }
 .experiences__img {
   position: absolute;
 }
 .experiences__img--1 {
+  top: 10rem;
   left: 10rem;
 }
 .experiences__img--2 {
@@ -1268,10 +1276,10 @@ body.loaded .preloader {
   overflow: visible;
 }
 .promise__info {
-  padding: 15rem 0;
+  padding: 7rem 0;
 }
 .promise__info ul {
-  margin-top: 7.9rem;
+  margin-top: 5rem;
 }
 .promise__info ul li {
   list-style: none;
@@ -1546,7 +1554,6 @@ body.loaded .preloader {
   font-size: 2.4rem;
   color: #69696a;
   line-height: 3.8rem;
-  margin-bottom: 9rem;
 }
 
 .testimonial__swiper-slide h3 {
@@ -1652,9 +1659,11 @@ body.loaded .preloader {
 }
 
 .video h2 {
-  font-size: 3rem;
+  font-weight: 300 !important;
+  font-size: 6rem;
+  line-height: 6rem;
   color: #69696a;
-  margin: 0 auto 8.8rem auto;
+  margin: 0 auto 6rem auto;
   text-align: center;
 }
 
