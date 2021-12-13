@@ -16,7 +16,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-weight: 400 !important;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 a {
   text-decoration: none !important;
@@ -343,7 +343,7 @@ body.loaded .preloader {
 }
 .header__nav li a {
   font-size: 1.4rem;
-  color: orange;
+  color: white;
   text-transform: uppercase;
   padding: 0 2.35rem;
   font-weight: 500 !important;
@@ -357,7 +357,7 @@ body.loaded .preloader {
     display: block;
     width: 0;
     height: 0.15rem;
-    background-color: orange;
+    background-color: white;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -413,7 +413,7 @@ body.loaded .preloader {
 .header__bars-bar {
   height: 0.2rem;
   display: block;
-  background-color: orange;
+  background-color: white;
   margin: 0.3rem 0;
   float: right;
 }
@@ -486,7 +486,7 @@ body.loaded .preloader {
   min-height: 100vh;
   position: relative;
   top: 0;
-  background-color: #fff9ec;
+  background-color: #fce1ef;
 }
 .hero::before {
   content: "";
@@ -495,7 +495,7 @@ body.loaded .preloader {
   top: 0;
   width: 100%;
   height: 60%;
-  background-color: #ffeec9;
+  background-color: #eeb9df;
   z-index: 1;
 }
 .hero__img {
@@ -503,7 +503,6 @@ body.loaded .preloader {
   width: 100%;
   height: 100%;
   position: relative;
-  /*top: 8.6rem;*/
 }
 .hero__img__wrapper {
   width: -webkit-max-content;
@@ -551,7 +550,7 @@ body.loaded .preloader {
 }
 .hero__info .button:hover {
   color: #d26c23;
-  background-color: #fff9ec;
+  background-color: #fce1ef;
 }
 @media (max-width: 991.98px) {
   .hero__img .cone {
@@ -820,8 +819,6 @@ body.loaded .preloader {
   background: url("../images/detail-img1.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
-/*  border-radius: 50%;
-  background-color: #ffeec9;*/
   overflow: visible;
   position: relative;
   left: -8.5rem;
@@ -859,7 +856,7 @@ body.loaded .preloader {
   margin-bottom: 3.4rem;
 }
 .detail__info .card {
-  border: 2px solid #ffeec9;
+  border: 2px solid #eeb9df;
   margin: 1rem 0;
   padding: 0 3.4rem 0 3.4rem;
 }
@@ -952,7 +949,7 @@ body.loaded .preloader {
   top: 0;
   width: 100%;
   height: 68.5%;
-  background-color: #fff9ec;
+  background-color: #fce1ef;
   z-index: -3;
 }
 .inside::after {
@@ -962,7 +959,7 @@ body.loaded .preloader {
   bottom: 0;
   width: 100%;
   height: 31.5%;
-  background-color: #ffeec9;
+  background-color: #eeb9df;
   z-index: -3;
 }
 .inside__wrapper {
@@ -1075,7 +1072,7 @@ body.loaded .preloader {
 @media (max-width: 991.98px) {
   .inside {
     padding: 10rem 0;
-    background-color: #ffeec9;
+    background-color: #eeb9df;
   }
   .inside__boxes {
     -ms-flex-wrap: wrap;
@@ -1129,7 +1126,6 @@ body.loaded .preloader {
   height: 140rem;
 }
 .experiences__info {
-  /*color: #fff;*/
   color: #7f796c;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1158,7 +1154,6 @@ body.loaded .preloader {
   width: 100%;
 }
 .experiences__info .text-link {
-  /*color: #fff;*/
   color: #7f796c;
   position: relative;
   -ms-flex-item-align: end;
@@ -1185,23 +1180,12 @@ body.loaded .preloader {
   width: 58.5rem;
   top: 16rem;
   right: 7rem;
-  /*z-index: 200;*/
-  /*
-  background: url("../images/experience-bg-1.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
-  */
-  background-color: #fff9ec;
+  background-color: #fce1ef;
 }
 .experiences__info--2 {
   width: 50rem;
   top: 84.1rem;
-  /*
-  background: url("../images/experience-bg-2.jpg") no-repeat;
-  background-size: cover;
-  background-position: center center;
-  */
-  background-color: #fff9ec;
+  background-color: #fce1ef;
   z-index: 10;
 }
 .experiences__info--2 .h5-heading {
@@ -1242,6 +1226,7 @@ body.loaded .preloader {
   .experiences__info--1 {
     right: 0;
     top: 25rem;
+    z-index: 100;
   }
   .experiences__info--2 {
     top: 95rem;
@@ -1252,6 +1237,7 @@ body.loaded .preloader {
   .experiences__img--2 {
     top: 60rem;
     left: 15rem;
+    z-index: 0;
   }
   .experiences__img--3 {
     top: 130rem;
@@ -1267,7 +1253,7 @@ body.loaded .preloader {
   }
 }
 .promise {
-  background-color: #fff9ec;
+  background-color: #fce1ef;
 }
 .promise .container {
   overflow: visible;
@@ -1283,7 +1269,7 @@ body.loaded .preloader {
 }
 .promise__info ul li {
   list-style: none;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: #7f796c;
   font-weight: 300 !important;
   margin-top: 1.4rem;
@@ -1340,7 +1326,7 @@ body.loaded .preloader {
 }
 .cta {
   position: relative;
-  background-color: #ffeec9;
+  background-color: #fce1ef;
 }
 .cta__img {
   position: relative;
@@ -1359,7 +1345,7 @@ body.loaded .preloader {
 }
 .cta__img .leaf {
   right: 0;
-  bottom: 0;/*-5.6rem;*/
+  bottom: 0;
   right: 3rem;
 }
 .cta__img .bottle {
@@ -1409,20 +1395,7 @@ body.loaded .preloader {
   transition: all 0.25s ease;
   margin-top: 1.3rem;
   display: inline-block;
-/*
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 22.4rem;
-  height: 7.9rem;
-  background-color: #d26c23;
-  padding: 1.5rem 2rem;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-*/
+
 }
 .cta__info--buttons-single div {
   margin-left: 1rem;
@@ -1448,7 +1421,7 @@ body.loaded .preloader {
 }
 .cta__info--buttons-single:hover {
   color: #d26c23;
-  background-color: #fff9ec;
+  background-color: #fce1ef;
 }
 .cta__info--buttons-single:hover h6,
 .cta__info--buttons-single:hover h5 {
@@ -1675,5 +1648,3 @@ body.loaded .preloader {
 .video__swiper-slide {
   text-align: center;
 }
-
-/*# sourceMappingURL=style.css.map */
